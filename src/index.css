@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@theme {
+    --color-brand-primary: #0B0E12;
+    --color-brand-secondary: #0E151B;
+    --color-brand-text: #E2E6E7;
+    --color-brand-blue: #335DD2;
+    --color-brand-border: #10171E;
+    --color-brand-input: #18222F;
+}
+body{
+    background-color: var(--color-brand-primary);
+}
+
+.hero-banner {
+    background: url('/public/frame-container.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
