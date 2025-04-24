@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
+import { NavLink } from "react-router";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,18 +14,18 @@ const Header = () => {
       {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center gap-6 text-white text-sm">
         <ul className="flex gap-6">
-        <li className="cursor-pointer hover:text-brand-blue transition">
-          Web XV
-        </li>
-        <li className="cursor-pointer hover:text-brand-blue transition">
-          All Projects
-        </li>
-        <li className="cursor-pointer hover:text-brand-blue transition">
-          Community
-        </li>
-        <li className="cursor-pointer hover:text-brand-blue transition">
-          About Us
-        </li>
+          <li className="cursor-pointer hover:text-brand-blue transition">
+            <NavLink to={"/"}>Web XV</NavLink>
+          </li>
+          <li className="cursor-pointer hover:text-brand-blue transition">
+            <NavLink to={"all-projects"}>All Projects</NavLink>
+          </li>
+          <li className="cursor-pointer hover:text-brand-blue transition">
+            <NavLink to={"community"}>Community</NavLink>
+          </li>
+          <li className="cursor-pointer hover:text-brand-blue transition">
+            <NavLink to={"about-us"}>About Us</NavLink>
+          </li>
         </ul>
       </nav>
 
@@ -34,19 +35,25 @@ const Header = () => {
       </button>
 
       {/* Toggle Button */}
-      <button onClick={() => setIsOpen(true)} className="md:hidden text-white cursor-pointer">
+      <button
+        onClick={() => setIsOpen(true)}
+        className="md:hidden text-white cursor-pointer"
+      >
         <CiMenuFries size={28} />
       </button>
 
       {/* Slide-in Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-brand-primary shadow-lg transform transition-transform duration-300 z-50 ${
+        className={`fixed top-0 right-0 h-full w-80 bg-brand-primary shadow-lg transform transition-transform duration-300 z-50 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex justify-between items-center px-6 py-4 border-b border-brand-border">
           <img src="/logo.png" alt="Logo" className="w-24" />
-          <button onClick={() => setIsOpen(false)} className="text-white cursor-pointer">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="text-white cursor-pointer"
+          >
             <RxCross1 size={28} />
           </button>
         </div>
