@@ -5,7 +5,7 @@ import { NavLink } from "react-router";
 const Register = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 px-6 md:px-16 lg:px-24 py-16 lg:py-20">
-      <img className="w-[100%] h-auto" src="/public/register.png" alt="" />
+      <img className="w-[100%] h-auto" src="/register.png" alt="" />
 
       {/* Registration Form */}
       <div className="bg-brand-secondary p-6 md:p-8 rounded-xl shadow-lg text-white max-w-md w-full mx-auto">
