@@ -154,17 +154,17 @@ const Home = () => {
             Top crypto chart
           </h2>
         </div>
-        <div className="w-full overflow-x-auto mt-10 rounded-2xl bg-[#13161e] shadow-lg">
+        <div className="w-[80%] overflow-x-auto mt-10 rounded-2xl bg-brand-secondary shadow-lg">
           <table className="min-w-full text-left">
             <thead className="border-b border-gray-700">
               <tr>
-                <th className="py-4 px-6 text-sm text-brand-text-light">
+                <th className="py-6 px-6 text-sm text-brand-text-light">
                   NAME
                 </th>
-                <th className="py-4 px-6 text-sm text-brand-text-light">
+                <th className="py-6 px-6 text-sm text-brand-text-light">
                   PRICE
                 </th>
-                <th className="py-4 px-6 text-sm text-brand-text-light">
+                <th className="py-6 px-6 text-sm text-brand-text-light">
                   GRAPH
                 </th>
               </tr>

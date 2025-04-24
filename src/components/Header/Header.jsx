@@ -7,9 +7,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex items-center justify-between bg-brand-primary border-2 border-brand-border px-6 md:px-10 lg:px-20 py-4 relative">
+    <header className="flex items-center justify-between bg-brand-primary border-2 border-brand-border px-6 md:px-10 lg:px-20 py-6 relative">
       {/* Logo */}
-      <img src="/logo.png" alt="Logo" className="w-24 sm:w-28 md:w-32" />
+      <NavLink to={"/"}>
+        <img src="/logo.png" alt="Logo" className="w-24 sm:w-28 md:w-32" />
+      </NavLink>
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center gap-6 text-white text-sm">
@@ -49,7 +51,9 @@ const Header = () => {
         }`}
       >
         <div className="flex justify-between items-center px-6 py-4 border-b border-brand-border">
-          <img src="/logo.png" alt="Logo" className="w-24" />
+          <NavLink to={'/'}>
+            <img src="/logo.png" alt="Logo" className="w-24" />
+          </NavLink>
           <button
             onClick={() => setIsOpen(false)}
             className="text-white cursor-pointer"
@@ -59,16 +63,16 @@ const Header = () => {
         </div>
         <ul className="flex flex-col px-6 py-6 gap-4 text-white text-sm">
           <li className="cursor-pointer hover:text-brand-blue transition">
-            Web XV
+            <NavLink to={"/"}>Web XV</NavLink>
           </li>
           <li className="cursor-pointer hover:text-brand-blue transition">
-            All Projects
+            <NavLink to={"all-projects"}>All Projects</NavLink>
           </li>
           <li className="cursor-pointer hover:text-brand-blue transition">
-            Community
+            <NavLink to={"community"}>Community</NavLink>
           </li>
           <li className="cursor-pointer hover:text-brand-blue transition">
-            About Us
+            <NavLink to={"about-us"}>About Us</NavLink>
           </li>
           <li>
             <button className="mt-4 w-full bg-brand-blue hover:bg-blue-600 transition text-white px-4 py-2 rounded-md uppercase text-sm font-semibold">

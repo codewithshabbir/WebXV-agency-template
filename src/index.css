@@ -24,3 +24,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.projects-section {
+    background: url('/public/effect-02.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,9 +1,9 @@
-import React from 'react'
-
+import React from "react";
+import Login from "../../components/Login/Login";
 const Community = () => {
   return (
-    <div>Community</div>
-  )
-}
+    <Login/>
+  );
+};
 
-export default Community
+export default Community;
