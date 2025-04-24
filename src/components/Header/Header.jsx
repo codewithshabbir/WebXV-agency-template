@@ -17,16 +17,44 @@ const Header = () => {
       <nav className="hidden md:flex items-center gap-6 text-white text-sm">
         <ul className="flex gap-6">
           <li className="cursor-pointer hover:text-brand-blue transition">
-            <NavLink to={"/"}>Web XV</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-brand-blue" : "text-white"
+              }
+              to={"/"}
+            >
+              Web XV
+            </NavLink>
           </li>
           <li className="cursor-pointer hover:text-brand-blue transition">
-            <NavLink to={"all-projects"}>All Projects</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-brand-blue" : "text-white"
+              }
+              to={"all-projects"}
+            >
+              All Projects
+            </NavLink>
           </li>
           <li className="cursor-pointer hover:text-brand-blue transition">
-            <NavLink to={"community"}>Community</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-brand-blue" : "text-white"
+              }
+              to={"community"}
+            >
+              Community
+            </NavLink>
           </li>
           <li className="cursor-pointer hover:text-brand-blue transition">
-            <NavLink to={"about-us"}>About Us</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-brand-blue" : "text-white"
+              }
+              to={"about-us"}
+            >
+              About Us
+            </NavLink>
           </li>
         </ul>
       </nav>
@@ -51,7 +79,7 @@ const Header = () => {
         }`}
       >
         <div className="flex justify-between items-center px-6 py-4 border-b border-brand-border">
-          <NavLink to={'/'}>
+          <NavLink to={"/"}>
             <img src="/logo.png" alt="Logo" className="w-24" />
           </NavLink>
           <button
@@ -63,16 +91,44 @@ const Header = () => {
         </div>
         <ul className="flex flex-col px-6 py-6 gap-4 text-white text-sm">
           <li className="cursor-pointer hover:text-brand-blue transition">
-            <NavLink to={"/"}>Web XV</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-brand-blue" : "text-white"
+              }
+              to={"/"}
+            >
+              Web XV
+            </NavLink>
           </li>
           <li className="cursor-pointer hover:text-brand-blue transition">
-            <NavLink to={"all-projects"}>All Projects</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-brand-blue" : "text-white"
+              }
+              to={"all-projects"}
+            >
+              All Projects
+            </NavLink>
           </li>
           <li className="cursor-pointer hover:text-brand-blue transition">
-            <NavLink to={"community"}>Community</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-brand-blue" : "text-white"
+              }
+              to={"community"}
+            >
+              Community
+            </NavLink>
           </li>
           <li className="cursor-pointer hover:text-brand-blue transition">
-            <NavLink to={"about-us"}>About Us</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-brand-blue" : "text-white"
+              }
+              to={"about-us"}
+            >
+              About Us
+            </NavLink>
           </li>
           <li>
             <button className="mt-4 w-full bg-brand-blue hover:bg-blue-600 transition text-white px-4 py-2 rounded-md uppercase text-sm font-semibold">
