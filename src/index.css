@@ -6,6 +6,8 @@
     --color-brand-blue: #335DD2;
     --color-brand-border: #10171E;
     --color-brand-input: #18222F;
+    --color-brand-text-light: #A1A1A1;
+    --color-brand-text-extra-light: #4C5357;
 }
 body{
     background-color: var(--color-brand-primary);
@@ -17,3 +19,8 @@ body{
     background-size: cover;
 }
 
+.home-cta {
+    background: url('/public/effect-01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
