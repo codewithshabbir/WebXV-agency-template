@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const Footer = () => {
   return (
@@ -6,7 +7,9 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-12 gap-8 py-12">
         {/* Logo & Description */}
         <div className="lg:col-span-6 space-y-4 pr-20">
+          <NavLink to={'/'}>
           <img className="mb-4" src="/logo.png" alt="WebXV Logo" />
+          </NavLink>
           <p className="text-brand-text-light text-sm md:text-base">
             A SocialFi platform for Web3.0 projects to connect with users.
           </p>
@@ -20,21 +23,38 @@ const Footer = () => {
         <div className="lg:col-span-3">
           <h4 className="text-lg font-semibold mb-4">Company</h4>
           <ul className="text-brand-text-light space-y-2 text-sm md:text-base">
-            <li>
-              <a href="#">About Us</a>
+            <li className="cursor-pointer hover:text-brand-blue transition">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "text-brand-blue" : "text-brand-text-light"
+                }
+                to={"about-us"}
+              >
+                About Us
+              </NavLink>
             </li>
-            <li>
-              <a href="#">Projects</a>
+            <li className="cursor-pointer hover:text-brand-blue transition">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "text-brand-blue" : "text-brand-text-light"
+                }
+                to={"all-projects"}
+              >
+                Projects
+              </NavLink>
             </li>
-            <li>
-              <a href="#">Community</a>
+            <li className="cursor-pointer hover:text-brand-blue transition">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "text-brand-blue" : "text-brand-text-light"
+                }
+                to={"community"}
+              >
+                Community
+              </NavLink>
             </li>
-            <li>
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#">Terms and Conditions</a>
-            </li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
           </ul>
         </div>
 
