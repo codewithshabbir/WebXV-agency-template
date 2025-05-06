@@ -1,6 +1,6 @@
 # ⚛️ Figma to React - Modern Web App UI
 
-![Figma to React](/webxvscreenshot.png)
+![Figma to React](/public/webxvscreenshot.png)
 
 Welcome to **Figma to React**, a responsive and component-based web application developed using React.js and Tailwind CSS. This project is a complete conversion of a UI/UX design from Figma into a live, interactive frontend — built with scalability and modern design principles in mind.
 
